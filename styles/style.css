@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +11,56 @@
     font-style: normal;
 }
 
+ 
+/*shared style*/
+
+.heading{
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+}
+
+.card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 52px 40px;
+    gap: 32px;
+}
+
+.card-heading{
+    color: #202020;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 24.523px;
+    font-weight: 700;
+    line-height: 30.654px;
+}
+
+.card-des{
+    color: #808080;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 15.091px;
+    font-weight: 500;
+    line-height: 28.296px;
+}
+
+.card-btn{
+    font-family: Quicksand;
+    font-size: 15.091px;
+    font-weight: 700;
+    line-height: 28.296px;
+    text-decoration: none;
+}
+
+ 
+/**/
 .nav-sec{
     max-width: 1160px;
     margin: 0px auto;
@@ -20,6 +71,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 26px 0px;
 }
 .logo{
@@ -141,3 +193,194 @@ ul{
     width: 197px;
     text-decoration: none;
 }
+
+/*Curriculum Sec*/
+
+.curriculum-sec{
+    background: url('../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    max-width: 1160px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80;
+    padding: 60px 0px;
+
+}
+
+.curriculum-container{
+
+    margin-bottom: 80px;
+}
+.curriculum-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    margin-bottom: 80px;
+}
+
+.card1{
+    border-radius: 18.864px;
+    border: 0.943px solid #DEF5FF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+
+
+}
+
+.card2{
+    border-radius: 18.864px;
+    border: 0.943px solid #FFF4DC;
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.card3{
+    border-radius: 18.864px;
+    border: 0.943px solid #F2E8FF;
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.card-btn1{
+    color: #64C8FF;
+}
+
+.card-btn2{
+    color: #F0AA00;
+}
+
+.card-btn3{
+    color: #8700FF;
+}
+
+.card-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon{
+    cursor: pointer;
+    padding: 17px 22px;
+    border-radius: 30px;
+    background: #FEA301;
+}
+
+/*Blog-sec*/
+
+.blog-sec{
+    max-width: 1160px;
+    margin: 0px auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hamburger-icon {
+    display: none; /* Hidden on larger screens */
+}
+
+ 
+
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none; /* Hide the menu on mobile */
+    }
+    .nav-btn {
+        display: none; /* Hide the nav button on mobile */
+    }
+    .hamburger-icon {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .hero-sec {
+       
+        padding: 0px 20px;
+        margin-bottom: 60px;
+    }
+
+    .hero-container {
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .hero-text{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-heading , .hero-des{
+       align-self: center;
+    }
+
+    .hero-img{
+        margin-top: 8px;
+    }
+    .hero-des {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .logo{
+        width: 100%;
+        padding: 0px 20px;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+         
+    }
+
+    .nav-container{
+        border-bottom: 1px solid #FEA301;
+        padding: 16px 0px;
+    }
+
+    .hero-heading{
+        width: 100%;
+    }
+
+    .curriculum-sec{
+        padding-top: 40px;
+    }
+
+    .curriculum-container{
+        margin-bottom: 20px;
+    }
+
+    .curriculum-card-container{
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-des{
+        width: 194px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-icons{
+        display: none;
+    }
+
+    .curriculum-sec{
+        padding: 0px;
+    }
+
+    .blog-sec{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+ 
