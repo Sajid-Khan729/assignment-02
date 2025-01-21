@@ -11,7 +11,6 @@
     font-style: normal;
 }
 
- 
 /*shared style*/
 
 .heading{
@@ -154,8 +153,10 @@ ul{
     display: flex;
     flex-direction: column;
 }
+
+ 
+
 .hero-heading{
-    width: 580px;
     font-family: Quicksand;
     font-size: 56px;
     font-weight: 700;
@@ -273,19 +274,144 @@ ul{
 /*Blog-sec*/
 
 .blog-sec{
-    max-width: 1160px;
-    margin: 0px auto;
+    
     padding: 60px 0px;
     display: flex;
     flex-direction: column;
     gap: 80px;
+    background-image: url('/assets/bg.png'), linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%); 
+    background-position: center;
+    background-size: cover;
 }
 
 .hamburger-icon {
     display: none; /* Hidden on larger screens */
 }
 
+
+
+.blog-heading{
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blog-container{
+    max-width: 1160px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.blog-img{
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog-card-parent{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+     
+}
+
+
+.blog-card1{
+
+    width: 540px;
+}
+
+.date{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 15.339px;
+    font-weight: 500;
+    line-height: 28.761px;
+    text-transform: capitalize;
+    padding: 14px 19px;
+    border-radius: 47.934px;
+    background: #3CD8E8;
+    position: relative;
+    margin-top: -30.5px;
+    margin-bottom: 36px;
+}
+
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0px 68px 34px 38px;
+    border-radius: 0px 0px 16px 16px;
+    background: #FFF;   
+}
+
+.blog-title{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.347px;
+    margin-bottom: 51px;
+}
+
+.blog-des{
+    color: #666;
+    font-family: Raleway;
+    font-size: 15.339px;
+    font-weight: 500;
+    line-height: 28.761px; 
+}
+
+
+
+.blog-square{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.blog-card{
+    width: 290px;
+     
+}
+
  
+.blog-title2{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 15.339px;
+    font-weight: 700;
+    line-height: 28.761px;
+}
+
+.date2{
+    margin-bottom: 23px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 15.339px;
+    font-weight: 700;
+    line-height: 28.761px;
+    text-transform: capitalize;
+    padding: 10px 19px;
+    border-radius: 47.934px;
+    background: #95B226;
+    position: relative;
+    margin-top: -30.5px;
+    text-align: center;
+}
+
+.blog-text2{
+    padding: 0px 38px 28px 38px;
+    background-color: #FFF;
+    border-radius: 0px 0px 16px 16px;
+}
+
+ 
+
 
 @media screen and (max-width: 576px) {
     .menu {
@@ -329,20 +455,25 @@ ul{
         width: 100%; /* Adjust width for smaller screens */
     }
 
-    .logo{
-        width: 100%;
-        padding: 0px 20px;
-        justify-content: space-between;
-        flex-direction: row-reverse;
+    .hero-btn{
+        width: auto;
          
+    }
+
+    .card-des{
+        font-size: 10px;
     }
 
     .nav-container{
         border-bottom: 1px solid #FEA301;
-        padding: 16px 0px;
+        padding: 16px 20px;
     }
 
     .hero-heading{
+        width: 100%;
+    }
+
+    .hero-img {
         width: 100%;
     }
 
@@ -380,6 +511,52 @@ ul{
     .blog-sec{
         padding-top: 40px;
         padding-bottom: 20px;
+    }
+
+    .blog-card1{
+        display: none;
+    }
+
+    .blog-sec{
+        padding: 0px 20px;
+
+    }
+
+    .blog-container{
+        padding-top: 40px;
+    }
+
+    .blog-card{
+        width: 183px;
+    }
+
+    .blog-img{
+        width: 100%;
+    }
+
+    .blog-square{
+        gap: 11px;
+        justify-content: space-between;
+    }
+
+    .blog-card-parent{
+        gap: 11px;
+    }
+
+    .date2{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 9.133px;
+    font-weight: 500;
+    line-height: 17.125px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    margin-top: -18px;
+
+    }
+
+    .blog-text2{
+        padding: 0px 22px 17px 22px;
     }
 }
 
