@@ -411,9 +411,125 @@ ul{
 }
 
  
+.blog-btn-container{
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*Footer-sec*/
+
+.footer-sec{
+    background-color: #01ACFD;
+}
+
+
+.footer-container{
+    width: 1160px;
+    margin: 0px auto;
+    padding: 122px 0px 174px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer1{
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-heading{
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 42.143px;
+    font-weight: 700;
+    line-height: 39.509px;
+}
+
+.footer-des{
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+     
+}
+
+.menu-heading{
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-name{
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer3{
+     
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.social-heading{
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px; 
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 576px) {
+    .blog-sec{
+        padding-bottom: 60px
+    }
     .menu {
         display: none; /* Hide the menu on mobile */
     }
@@ -524,6 +640,7 @@ ul{
 
     .blog-container{
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .blog-card{
@@ -558,6 +675,53 @@ ul{
     .blog-text2{
         padding: 0px 22px 17px 22px;
     }
+
+    .footer-sec{
+        padding: 0px 20px;
+    }
+
+    .footer-container{
+        width: 100%;
+        gap: 32px;
+        padding: 60px 0px;
+
+    }
+
+    .footer1 , .footer2 , .footer3{
+        width: 100%;
+    }
+
+    
 }
 
- 
+@media screen and (max-width:393px) {
+    .blog-sec{
+        padding-bottom: 60px
+    }
+    .blog-card{
+        width: 170px;
+    }
+
+
+}
+
+@media screen and (max-width:390px) {
+    .blog-sec{
+        padding-bottom: 60px
+    }
+   
+}
+
+@media screen and (max-width:412px) {
+    .blog-sec{
+        padding-bottom: 60px
+    }
+    .blog-card1{
+        display: none;
+
+    }
+
+    .blog-card{
+        width: 166px;
+    }
+}
